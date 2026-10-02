@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — OddsBuddy</title>
+<meta name="description" content="Help with the OddsBuddy iOS app: adding and following markets, probabilities, charts, alerts, local data, troubleshooting, and contacting support.">
+<meta name="theme-color" content="#0a1024">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="../assets/favicon-64.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="../"><img src="../assets/icon-256.png" alt="" width="36" height="36">OddsBuddy</a>
+    <nav class="site" aria-label="Site">
+      <a href="./" aria-current="page">Support</a>
+      <a href="../terms/">Terms</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    <p class="eyebrow">Help Center</p>
+    <h1>OddsBuddy Support</h1>
+    <p class="lede">Help with the OddsBuddy iOS app: following prediction markets, reading probabilities and charts, setting alerts, and fixing common problems.</p>
+
+    <div class="card">
+      <h2>Contact support</h2>
+      <p>Questions, bug reports, or feedback:</p>
+      <p><a class="contact-btn" href="mailto:owensines2@gmail.com?subject=OddsBuddy%20Support">Email owensines2@gmail.com</a></p>
+    </div>
+
+    <h2 id="topics">Common help topics</h2>
+    <ul class="toc">
+      <li><a href="#add">Adding a market</a></li>
+      <li><a href="#follow">Following and unfollowing</a></li>
+      <li><a href="#refresh">Refreshing market data</a></li>
+      <li><a href="#probability">What the probability means</a></li>
+      <li><a href="#change">24-hour change</a></li>
+      <li><a href="#charts">Charts</a></li>
+      <li><a href="#alerts">Alerts</a></li>
+      <li><a href="#notes">Notes</a></li>
+      <li><a href="#data">Your data on this device</a></li>
+      <li><a href="#samples">Sample and custom markets</a></li>
+      <li><a href="#connectivity">Connection problems</a></li>
+      <li><a href="#report">Reporting incorrect market information</a></li>
+    </ul>
+
+    <details id="add" open>
+      <summary>How do I add a prediction market?</summary>
+      <ol>
+        <li>Open the <strong>Explore</strong> tab and choose <strong>Polymarket</strong>, or tap <strong>+</strong> on the Home screen.</li>
+        <li>Search by keyword, or paste a link to a market or event from polymarket.com and tap search. Popular markets are shown when the search field is empty.</li>
+        <li>If an event contains several questions, each one is listed separately. Pick the exact question you want and tap <strong>Follow</strong>.</li>
+      </ol>
+      <p>OddsBuddy currently supports markets from polymarket.com that have explicit Yes/No outcomes. Markets without a Yes/No pair can be viewed in search results but can't be followed yet.</p>
+    </details>
+
+    <details id="follow">
+      <summary>How do I follow or unfollow a market?</summary>
+      <p>Tap the <strong>heart</strong> on a market card or at the top of a market's detail screen. Followed markets appear on Home.</p>
+      <p>Unfollowing removes a market from Home but keeps it, along with its notes, in <strong>Explore → Saved library</strong>, where you can follow it again later.</p>
+    </details>
+
+    <details id="refresh">
+      <summary>How do I refresh market data?</summary>
+      <ul>
+        <li><strong>Home:</strong> pull down on the list to refresh all followed live markets.</li>
+        <li><strong>Market detail:</strong> tap <strong>Refresh price &amp; history</strong>.</li>
+        <li>Prices also refresh automatically when you open OddsBuddy.</li>
+      </ul>
+      <p>Each market shows when its price was fetched. Prices older than five minutes, or prices that couldn't be refreshed, are marked <strong>stale</strong>, and the last saved value is kept until a refresh succeeds.</p>
+    </details>
+
+    <details id="probability">
+      <summary>What does the probability mean?</summary>
+      <p>For live markets, the large percentage is the market's current <strong>Yes</strong> price: the midpoint between the best bid and ask, shown as a percentage. It reflects what market participants are pricing in at that moment. It is not a forecast made by OddsBuddy, and it is not a guarantee of any outcome.</p>
+      <p>Search results show the market's quoted Yes price, which can differ slightly from the midpoint fetched after you follow. Closed markets show no current price.</p>
+    </details>
+
+    <details id="change">
+      <summary>How is the 24-hour change calculated?</summary>
+      <p>The change compares the current price with the most recent recorded price from about 24 hours earlier. It's shown in <strong>percentage points (pp)</strong>: a move from 40% to 45% is +5 pp.</p>
+      <p>If there isn't a recorded price close enough to 24 hours ago (for example, on a very new market), OddsBuddy shows the change as unavailable rather than estimating it. The <strong>Moving</strong> filter on Home shows followed markets that moved 3 pp or more.</p>
+    </details>
+
+    <details id="charts">
+      <summary>How do the charts work?</summary>
+      <p>Open any live market to see its price history. Switch between <strong>24h</strong>, <strong>7d</strong>, and <strong>30d</strong>, and drag across the chart to see the price at a specific time.</p>
+      <p>History is recorded hourly by the market's data provider. Missing periods are left as gaps instead of being filled in, and newer markets may have less than 30 days of history.</p>
+    </details>
+
+    <details id="alerts">
+      <summary>How do alerts work?</summary>
+      <ol>
+        <li>Tap the <strong>bell</strong> on a market card or detail screen (or <strong>+</strong> on the Alerts tab).</li>
+        <li>Choose how far the probability must move, from 1 to 50 percentage points.</li>
+        <li>Tap <strong>Create Alert</strong>.</li>
+      </ol>
+      <p>An alert triggers once when the probability moves that far, up or down, from the price when you created it. A 5-point alert starting at 50% triggers at 55% or 45%.</p>
+      <p><strong>Important:</strong> alerts are checked inside the app each time prices refresh while OddsBuddy is open. OddsBuddy does not run in the background or send push notifications, so a move that happens and reverses while the app is closed may not be detected. Triggered alerts appear on the <strong>Alerts</strong> tab, where you can re-arm, pause, or delete them (swipe left to delete).</p>
+      <p>A market needs a current price before you can set an alert on it. If the bell is unavailable, refresh the market first.</p>
+    </details>
+
+    <details id="notes">
+      <summary>What are notes?</summary>
+      <p>Each market has a <strong>Conversation</strong> section where you can write notes for yourself. Notes are stored only on your device. They aren't posted publicly or sent to any prediction market, and other people can't see them.</p>
+    </details>
+
+    <details id="data">
+      <summary>Where is my data stored? What happens if I reinstall?</summary>
+      <p>Your watchlist, cached prices and history, notes, and alerts are stored locally on your iPhone. OddsBuddy has no accounts and no cloud sync.</p>
+      <p>Deleting OddsBuddy deletes this data from your device. Because there's no account, it can't be restored from OddsBuddy. A device backup (iCloud or computer) may include app data, depending on your Apple settings.</p>
+    </details>
+
+    <details id="samples">
+      <summary>What are Sample and Custom markets?</summary>
+      <p>On first launch, OddsBuddy includes a few markets labeled <strong>Sample</strong> so the app isn't empty. Their prices and history are simulated, not real market data.</p>
+      <p>You can also create your own <strong>Custom</strong> market from <strong>+ → Custom</strong>. Sample and custom markets let you try alerts with <strong>Simulate price move</strong> on the detail screen. Live markets are always labeled with their source.</p>
+    </details>
+
+    <details id="connectivity">
+      <summary>Prices won't load or show as stale</summary>
+      <p>Live prices need an internet connection. Without one, OddsBuddy keeps showing your last saved prices and history, marked as stale.</p>
+      <p>If the data provider is temporarily limiting requests, OddsBuddy waits before trying again rather than retrying repeatedly. Wait a minute, then pull to refresh. Requests that take longer than 20 seconds are cancelled and can be retried.</p>
+    </details>
+
+    <details id="report">
+      <summary>A market's information looks wrong</summary>
+      <p>Market questions, prices, and history come from the market's provider (currently Polymarket's public data). OddsBuddy displays this information but doesn't control the underlying markets and can't change their results.</p>
+      <p>If something looks wrong in OddsBuddy, refresh the market first. If it still looks wrong, email support with the market's link, a screenshot, and the time you saw it. That helps us tell whether it's an app issue or a change at the source.</p>
+    </details>
+
+    <h2 id="troubleshooting">Troubleshooting</h2>
+    <ol>
+      <li><strong>Check your connection.</strong> Searching and refreshing live markets need internet access. Saved markets still open offline.</li>
+      <li><strong>Refresh the market.</strong> Pull down on Home, or tap <strong>Refresh price &amp; history</strong> on the market's detail screen.</li>
+      <li><strong>Restart OddsBuddy.</strong> Swipe the app away from the App Switcher and open it again. Prices refresh on launch.</li>
+      <li><strong>Alerts:</strong> no notification permission is needed. Alerts are checked while the app is open and appear on the Alerts tab.</li>
+      <li><strong>Update OddsBuddy</strong> to the latest version from the App Store or TestFlight.</li>
+      <li><strong>Contact support</strong> if the problem continues.</li>
+    </ol>
+    <p class="muted small">Reinstalling the app deletes your local watchlist, notes, and alerts, so try the steps above first.</p>
+
+    <div class="card">
+      <h2>What to include in a support request</h2>
+      <ul>
+        <li>OddsBuddy version (and build number if you use TestFlight)</li>
+        <li>iOS version and iPhone model</li>
+        <li>What happened, and what you expected to happen</li>
+        <li>Steps to reproduce the problem</li>
+        <li>Screenshots, if they help</li>
+      </ul>
+      <p><strong>Please don't send</strong> passwords, financial account details or credentials, API keys or tokens, or payment card information. OddsBuddy support will never ask for them.</p>
+    </div>
+
+    <h2 id="data-note">About market information</h2>
+    <p>Prediction-market prices can change quickly, and the information in OddsBuddy comes from independent providers that may delay, correct, or stop publishing data. Probabilities are shown for information only and are not financial advice. OddsBuddy does not accept wagers, execute trades, or hold funds, and it is not affiliated with Polymarket or any other prediction market.</p>
+  </div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <span>OddsBuddy for iPhone</span>
+    <span><a href="../">Home</a> · <a href="../terms/">Terms of Service</a> · <a href="mailto:owensines2@gmail.com?subject=OddsBuddy%20Support">Contact</a></span>
+  </div>
+</footer>
+</body>
+</html>
